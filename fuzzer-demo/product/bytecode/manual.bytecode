@@ -1,0 +1,251 @@
+Classfile /Users/adian/Desktop/research/cov-demo/target/classes/edu/nju/isefuzz/HelloBranches1.class
+  Last modified 2023年10月7日; size 1321 bytes
+  MD5 checksum ee8edcbe929dbd202987c26847577b3d
+  Compiled from "HelloBranches1.java"
+public class edu.nju.isefuzz.HelloBranches1
+  minor version: 0
+  major version: 51
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #19                         // edu/nju/isefuzz/HelloBranches1
+  super_class: #20                        // java/lang/Object
+  interfaces: 0, fields: 0, methods: 3, attributes: 1
+Constant pool:
+   #1 = Methodref          #20.#39        // java/lang/Object."<init>":()V
+   #2 = Fieldref           #40.#41        // java/lang/System.out:Ljava/io/PrintStream;
+   #3 = String             #42            // [LOG] Reaching a branch!
+   #4 = Methodref          #43.#44        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #5 = Methodref          #19.#45        // edu/nju/isefuzz/HelloBranches1.printCov:()V
+   #6 = String             #46            // Require 1 arg!!!
+   #7 = Methodref          #40.#47        // java/lang/System.exit:(I)V
+   #8 = Methodref          #48.#49        // java/lang/String.toCharArray:()[C
+   #9 = String             #50            // Catch h!
+  #10 = String             #51            // Catch he!
+  #11 = String             #52            // Catch hel!
+  #12 = String             #53            // Catch hell!
+  #13 = String             #54            // Catch hello!
+  #14 = String             #55            // Failed at (4, o)!
+  #15 = String             #56            // Failed at (3, l)!
+  #16 = String             #57            // Failed at (2, l)!
+  #17 = String             #58            // Failed at (1, e)!
+  #18 = String             #59            // Failed at (0, h)!
+  #19 = Class              #60            // edu/nju/isefuzz/HelloBranches1
+  #20 = Class              #61            // java/lang/Object
+  #21 = Utf8               <init>
+  #22 = Utf8               ()V
+  #23 = Utf8               Code
+  #24 = Utf8               LineNumberTable
+  #25 = Utf8               LocalVariableTable
+  #26 = Utf8               this
+  #27 = Utf8               Ledu/nju/isefuzz/HelloBranches1;
+  #28 = Utf8               printCov
+  #29 = Utf8               main
+  #30 = Utf8               ([Ljava/lang/String;)V
+  #31 = Utf8               args
+  #32 = Utf8               [Ljava/lang/String;
+  #33 = Utf8               charArr
+  #34 = Utf8               [C
+  #35 = Utf8               StackMapTable
+  #36 = Class              #34            // "[C"
+  #37 = Utf8               SourceFile
+  #38 = Utf8               HelloBranches1.java
+  #39 = NameAndType        #21:#22        // "<init>":()V
+  #40 = Class              #62            // java/lang/System
+  #41 = NameAndType        #63:#64        // out:Ljava/io/PrintStream;
+  #42 = Utf8               [LOG] Reaching a branch!
+  #43 = Class              #65            // java/io/PrintStream
+  #44 = NameAndType        #66:#67        // println:(Ljava/lang/String;)V
+  #45 = NameAndType        #28:#22        // printCov:()V
+  #46 = Utf8               Require 1 arg!!!
+  #47 = NameAndType        #68:#69        // exit:(I)V
+  #48 = Class              #70            // java/lang/String
+  #49 = NameAndType        #71:#72        // toCharArray:()[C
+  #50 = Utf8               Catch h!
+  #51 = Utf8               Catch he!
+  #52 = Utf8               Catch hel!
+  #53 = Utf8               Catch hell!
+  #54 = Utf8               Catch hello!
+  #55 = Utf8               Failed at (4, o)!
+  #56 = Utf8               Failed at (3, l)!
+  #57 = Utf8               Failed at (2, l)!
+  #58 = Utf8               Failed at (1, e)!
+  #59 = Utf8               Failed at (0, h)!
+  #60 = Utf8               edu/nju/isefuzz/HelloBranches1
+  #61 = Utf8               java/lang/Object
+  #62 = Utf8               java/lang/System
+  #63 = Utf8               out
+  #64 = Utf8               Ljava/io/PrintStream;
+  #65 = Utf8               java/io/PrintStream
+  #66 = Utf8               println
+  #67 = Utf8               (Ljava/lang/String;)V
+  #68 = Utf8               exit
+  #69 = Utf8               (I)V
+  #70 = Utf8               java/lang/String
+  #71 = Utf8               toCharArray
+  #72 = Utf8               ()[C
+{
+  public edu.nju.isefuzz.HelloBranches1();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Ledu/nju/isefuzz/HelloBranches1;
+
+  public static void printCov();
+    descriptor: ()V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #3                  // String [LOG] Reaching a branch!
+         5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 6: 0
+        line 7: 8
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: aload_0
+         1: arraylength
+         2: iconst_1
+         3: if_icmpeq     21
+         6: invokestatic  #5                  // Method printCov:()V
+         9: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        12: ldc           #6                  // String Require 1 arg!!!
+        14: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        17: iconst_0
+        18: invokestatic  #7                  // Method java/lang/System.exit:(I)V
+        21: aload_0
+        22: iconst_0
+        23: aaload
+        24: invokevirtual #8                  // Method java/lang/String.toCharArray:()[C
+        27: astore_1
+        28: aload_1
+        29: iconst_0
+        30: caload
+        31: bipush        104
+        33: if_icmpne     182
+        36: invokestatic  #5                  // Method printCov:()V
+        39: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        42: ldc           #9                  // String Catch h!
+        44: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        47: aload_1
+        48: iconst_1
+        49: caload
+        50: bipush        101
+        52: if_icmpne     168
+        55: invokestatic  #5                  // Method printCov:()V
+        58: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        61: ldc           #10                 // String Catch he!
+        63: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        66: aload_1
+        67: iconst_2
+        68: caload
+        69: bipush        108
+        71: if_icmpne     154
+        74: invokestatic  #5                  // Method printCov:()V
+        77: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        80: ldc           #11                 // String Catch hel!
+        82: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        85: aload_1
+        86: iconst_3
+        87: caload
+        88: bipush        108
+        90: if_icmpne     140
+        93: invokestatic  #5                  // Method printCov:()V
+        96: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        99: ldc           #12                 // String Catch hell!
+       101: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       104: aload_1
+       105: iconst_4
+       106: caload
+       107: bipush        111
+       109: if_icmpne     126
+       112: invokestatic  #5                  // Method printCov:()V
+       115: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       118: ldc           #13                 // String Catch hello!
+       120: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       123: goto          193
+       126: invokestatic  #5                  // Method printCov:()V
+       129: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       132: ldc           #14                 // String Failed at (4, o)!
+       134: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       137: goto          193
+       140: invokestatic  #5                  // Method printCov:()V
+       143: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       146: ldc           #15                 // String Failed at (3, l)!
+       148: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       151: goto          193
+       154: invokestatic  #5                  // Method printCov:()V
+       157: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       160: ldc           #16                 // String Failed at (2, l)!
+       162: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       165: goto          193
+       168: invokestatic  #5                  // Method printCov:()V
+       171: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       174: ldc           #17                 // String Failed at (1, e)!
+       176: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       179: goto          193
+       182: invokestatic  #5                  // Method printCov:()V
+       185: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       188: ldc           #18                 // String Failed at (0, h)!
+       190: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       193: return
+      LineNumberTable:
+        line 11: 0
+        line 12: 6
+        line 13: 9
+        line 14: 17
+        line 18: 21
+        line 19: 28
+        line 20: 36
+        line 21: 39
+        line 22: 47
+        line 23: 55
+        line 24: 58
+        line 25: 66
+        line 26: 74
+        line 27: 77
+        line 28: 85
+        line 29: 93
+        line 30: 96
+        line 31: 104
+        line 32: 112
+        line 33: 115
+        line 35: 126
+        line 36: 129
+        line 39: 140
+        line 40: 143
+        line 43: 154
+        line 44: 157
+        line 47: 168
+        line 48: 171
+        line 51: 182
+        line 52: 185
+        line 55: 193
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     194     0  args   [Ljava/lang/String;
+           28     166     1 charArr   [C
+      StackMapTable: number_of_entries = 7
+        frame_type = 21 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 104
+          locals = [ class "[C" ]
+        frame_type = 13 /* same */
+        frame_type = 13 /* same */
+        frame_type = 13 /* same */
+        frame_type = 13 /* same */
+        frame_type = 10 /* same */
+}
+SourceFile: "HelloBranches1.java"
