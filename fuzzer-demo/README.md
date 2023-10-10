@@ -2,7 +2,7 @@
 
 模糊测试中的执行入口一般为称为模糊目标（Fuzz Target）或模糊驱动（Fuzz Driver）。在本项目中，模糊目标是以`public static void main(String[] args)`为执行入口、需要一个字符串作为输入的Java主类。本模块提供一些**黑盒**模糊器的简单实现。
 
-```shell
+```text
 ├── README.md
 ├── pom.xml
 ├── product # 一些输出
