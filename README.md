@@ -1,4 +1,4 @@
-## Fuzz-mut-demos
+## Demos for fuzzing and mutation testing
 
 一些自实现的模糊测试（Fuzzing，Fuzz Testing）和变异测试（Mutation Testing）的Demo，用作NJU软件学院软件测试课的参考。
 
