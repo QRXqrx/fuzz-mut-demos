@@ -15,7 +15,24 @@
 ```
 
 - docs: 一些资料（ASM+SOOT）
-- fuzz-targets: 一些以Java-main为入口的Fuzz Target/Driver
+- fuzz-targets: 一些以Java主类为入口的Fuzz Target/Fuzz Driver
 - fuzzer-demo: Fuzzer demo + ASM实战小例子
 - mut-cases: 变异测试Demo的输入
 - mutest-demo: Source-level变异测试Demo
+
+选课的同学们需根据选题自行搭建模糊器（Fuzzer）或变异测试工具。在本仓库中，fuzz-targets和mut-cases为模糊测试或变异测试的输入，供同学们调试代码使用；fuzzer-demo和mutest-demo分别为模糊测试和变异测试的简单实现。
+
+### 拓展阅读
+
+- Javaparser: Analyse, transform and generate your Java codebase
+  - 官网: https://javaparser.org/
+- Spoon: Source Code Analysis and Transformation for Java
+  - 官网: https://spoon.gforge.inria.fr/
+  - Github Repo: https://github.com/INRIA/spoon
+  - Examples: https://github.com/SpoonLabs/spoon-examples
+- ASM: All-purpose Java bytecode manipulation and analysis framework
+  - 官网: https://asm.ow2.io/
+- Soot: A framework for analyzing and transforming Java and Android applications
+  - 官网: https://soot-oss.github.io/soot/
+  - Github Repo: https://github.com/soot-oss/soot 
+  - [SootUp](https://soot-oss.github.io/SootUp/announce/): Enhanced version of Soot 
