@@ -140,6 +140,7 @@ public class DemoMutationBlackBoxFuzzer {
     /**
      * An exemplified seed.
      */
+//    static Seed initSeed = new Seed("abcde", true);
     static Seed initSeed = new Seed("helln", true);
 
     /**
