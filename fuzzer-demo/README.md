@@ -50,8 +50,6 @@ test目录下以JUnit4单元测试方法的形式提供了一些ASM实战代码�
 
 ### 拓展阅读
 
-这里给出一些SOTA Fuzzer链接供参考。可参考的部分包括模糊测试机制、UI设计、插装实现等。
-
 - [AFL++](https://github.com/AFLplusplus/AFLplusplus): A community-driven fuzzer based one AFL.
 - [JQF + Zest](https://github.com/rohanpadhye/JQF): Coverage-guided semantic fuzzing for Java.
 - [javafuzz](https://gitlab.com/gitlab-org/security-products/analyzers/fuzzers/javafuzz): Coverage guided fuzzer for java. 
