@@ -31,7 +31,7 @@ public class DemoMutationBlackBoxFuzzer {
         boolean findCrash = false;
         Set<ExecutionResult> observedRes = new HashSet<>();
         while (true) {
-            // Pick next seed, update round number.
+            // Seed scheduling: no seed prioritication and pick next seed. Update round number.
             Seed nextSeed = pickSeed(seedQueue, ++fuzzRnd);
             System.out.printf("[FUZZER] Pick seed `%s`, queue_size `%d`\n",
                     nextSeed, seedQueue.size());
@@ -69,7 +69,7 @@ public class DemoMutationBlackBoxFuzzer {
                 seedQueue.add(potentialSeed);
             }
 
-            // Update queue: seed retirement.
+            // Seed scheduling: seed retirement.
             if (seedQueue.size() > 500 || findCrash) {
                 int oriSize = seedQueue.size();
 
