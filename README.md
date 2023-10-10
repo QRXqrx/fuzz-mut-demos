@@ -24,6 +24,8 @@
 
 ### 拓展阅读
 
+模糊测试和变异测试通常会涉及一系列程序变换（Program Transformation）和插装（Instrumentation）的分析操作。针对Java程序的分析可以在源代码（.java）层面和字节码层面进行（即Source-level和Bytecode-level）。这里给出一些Java源代码分析和字节码操作（Bytecode Manipulation）的相关材料。
+
 - Javaparser: Analyse, transform and generate your Java codebase
   - 官网: https://javaparser.org/
 - Spoon: Source Code Analysis and Transformation for Java
