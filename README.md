@@ -3,7 +3,7 @@
 一些自实现的模糊测试（Fuzzing，Fuzz Testing）和变异测试（Mutation Testing）的Demo，用作NJU软件学院软件测试课的参考。
 
 项目结构：
-```shell
+```text
 .
 ├── LICENSE       
 ├── README.md
@@ -14,7 +14,7 @@
 └── mutest-demo 
 ```
 
-- docs: 一些资料（ASM+SOOT）
+- docs: 一些资料
 - fuzz-targets: 一些以Java主类为入口的Fuzz Target/Fuzz Driver
 - fuzzer-demo: Fuzzer demo + ASM实战小例子
 - mut-cases: 变异测试Demo的输入
