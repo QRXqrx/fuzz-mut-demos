@@ -23,3 +23,7 @@
 - `Calculator`: 一个简单的类，包含`add`，`substract`，`multiply`三个方法。
 - `CalculatorTestSuite`: `Calculator`的简单测试套件，通过抛出异常的方式表现测试不通过。
 
+### 拓展阅读
+
+- [Pitest](https://github.com/hcoles/pitest): State of the art mutation testing system for the JVM.
+- [Evosuite](https://www.evosuite.org/): Automatic test suite generation for Java.
