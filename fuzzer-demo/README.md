@@ -52,5 +52,6 @@ test目录下以JUnit4单元测试方法的形式提供了一些ASM实战代码�
 
 - [AFL++](https://github.com/AFLplusplus/AFLplusplus): A community-driven fuzzer based one AFL.
 - [JQF + Zest](https://github.com/rohanpadhye/JQF): Coverage-guided semantic fuzzing for Java.
-- [javafuzz](https://gitlab.com/gitlab-org/security-products/analyzers/fuzzers/javafuzz): Coverage guided fuzzer for java. 
+- [Javafuzz](https://gitlab.com/gitlab-org/security-products/analyzers/fuzzers/javafuzz): Coverage guided fuzzer for java.
+- [Jazzer](https://github.com/CodeIntelligenceTesting/jazzer): Coverage-guided, in-process fuzzing for the JVM.
 
