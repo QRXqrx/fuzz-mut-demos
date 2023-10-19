@@ -9,3 +9,5 @@
 ├── edu         # 源代码
 └── init-seed   # 一些样例种子
 ```
+
+一次性编译所有Fuzz Target：`bash ./build.sh`
