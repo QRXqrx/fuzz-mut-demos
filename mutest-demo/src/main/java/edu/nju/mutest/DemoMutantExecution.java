@@ -15,6 +15,11 @@ public class DemoMutantExecution {
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
+        if (args.length != 2) {
+            System.out.println("DemoMutantExecution: <testsuite_dir> <mutant_pool_dir>");
+            System.exit(0);
+        }
+
         File tsDir = new File(args[0]);
         File mutPoolDir = new File(args[1]);
         System.out.println("[LOG] Test suite dir: " + tsDir.getAbsolutePath());

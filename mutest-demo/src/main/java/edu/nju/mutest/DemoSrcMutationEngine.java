@@ -20,6 +20,11 @@ public class DemoSrcMutationEngine {
 
     public static void main(String[] args) throws IOException {
 
+        if (args.length != 2) {
+            System.out.println("DemoSrcMutationEngine: <source_java_file> <mutant_pool_dir>");
+            System.exit(0);
+        }
+
         // Read in original program(s).
         File srcFile = new File(args[0]);
         File outDir = new File(args[1]);
