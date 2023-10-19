@@ -23,6 +23,24 @@
 - `Calculator`: 一个简单的类，包含`add`，`substract`，`multiply`三个方法。
 - `CalculatorTestSuite`: `Calculator`的简单测试套件，通过抛出异常的方式表现测试不通过。
 
+### 使用方法
+
+本Demo的使用分为三个部分、四个步骤： 
+0. 准备待测程序和测试套件；
+1. 使用`DemoSrcMutantEngine`生成源代码变异体；
+2. 使用`compile-mutants.sh`将源代码变异体编译为`.class`文件；
+3. 使用`DemoMutantExecution`执行变异体。
+
+可能的命令行执行过程如下：
+
+```shell
+# 变异生成（Mutant Creation）
+java edu.nju.mutest.DemoSrcMutantEngine <src_file> <pool_dir>
+bash compile-mutants.sh <pool_dir>
+# 变异执行（Mutation Execution）
+java edu.nju.mutest.DemoMutantExecution <testsuite_dir> <pool_dir>
+```
+
 ### 拓展阅读
 
 - [Pitest](https://github.com/hcoles/pitest): State of the art mutation testing system for the JVM.
