@@ -13,9 +13,13 @@ import java.util.stream.Collectors;
  */
 public class DemoMutantExecution {
 
+
+    // Use fixed test suite in this demo.
+    static String TEST_SUITE_FQN = "edu.nju.mutest.example.CalculatorTestSuite";
     public static void main(String[] args) throws IOException, InterruptedException {
 
         if (args.length != 2) {
+            // Require param for specifying test suite.
             System.out.println("DemoMutantExecution: <testsuite_dir> <mutant_pool_dir>");
             System.exit(0);
         }
@@ -56,10 +60,7 @@ public class DemoMutantExecution {
         System.out.println("[LOG] ======================================================");
         System.out.printf("[LOG] Stats: %d/%d(#killed/#total), score=%.2f\n",
                 killedCnt, mutNum, calScore(killedCnt, mutNum));
-
     }
-
-    static String TEST_SUITE_FQN = "edu.nju.mutest.example.CalculatorTestSuite";
 
     private static String concateClassPath(String...paths) {
         StringBuilder cpBuilder = new StringBuilder();
