@@ -29,7 +29,18 @@ main目录下包含Fuzzer Demo的源码一些用于测试ASM字节码运算（By
     5. 输出分析: 发生在模糊循环中。该模糊器阅读模糊目标的标准输出，将产生新输出的测试输入标记为“favored”。
     6. 测试持久化: 发生在模糊循环后。将模糊循环中保存的种子输出存储到硬盘上。
 
-#### 可能的拓展
+#### 1.1 使用方法
+
+以`DemoMutationBlackBoxFuzzer`为例，运行`DemoMutationBlackBoxFuzzer`需要三个参数：类路径`cp`，模糊目标完全限定类名`tn`，以及模糊结果的保存路径`outDir`。
+假设从maven项目的构件目录`./target/classes`下用`java`指令执行，可能的执行流程如下：
+
+```shell
+cd ./target/classes
+java edu.nju.isefuzz.fuzzer.DemoMutationBlackBoxFuzzer <path_to_target_out> edu.nju.isefuzz.trgt.Target1 ./out
+```
+
+
+#### 1.2 可能的拓展
 
 - **基于覆盖的模糊测试**: 本仓库目前没有提供**基于覆盖**的模糊测试的实现，选择该题目的同学可以自行实现。一般情况下，基于覆盖的模糊器要求在模糊循环开始前对模糊目标进行覆盖率插装。实现插装有几种方式：
   - **改装已有插装工具**: Java插装工具有很多，常见的有[Jacoco](https://www.eclemma.org/jacoco/)和[Emma](https://emma.sourceforge.net/)。可以改装这些工具并将其接入到模糊测试流程中。
