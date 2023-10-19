@@ -28,6 +28,11 @@ public class DemoGenerationBlackBoxFuzzer {
 
     public static void main(String[] args) throws IOException {
 
+        if (args.length != 2) {
+            System.out.println("DemoMutationBlackBoxFuzzer: <classpath> <target_name>");
+            System.exit(0);
+        }
+
         String classPath = args[0];
         String targetName = args[1];
 

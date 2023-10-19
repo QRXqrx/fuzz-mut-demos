@@ -14,6 +14,10 @@ public class DemoMutationBlackBoxFuzzer {
     public static void main(String[] args) throws Exception {
 
         // Initialize. Parse args and prepare seed queue
+        if (args.length != 3) {
+            System.out.println("DemoMutationBlackBoxFuzzer: <classpath> <target_name> <out_dir>");
+            System.exit(0);
+        }
         String cp = args[0];
         String tn = args[1];
         File outDir = new File(args[2]);
